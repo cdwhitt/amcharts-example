@@ -12,6 +12,7 @@ function App(props) {
 	useLayoutEffect(() => {
 		let x = am4core.create("chartdiv", am4charts.XYChart)
 
+		//Blah
 		x.paddingRight = 50
 		let data = []
 		let visits = 10
