@@ -12,14 +12,13 @@ function App(props) {
 	useLayoutEffect(() => {
 		let x = am4core.create("chartdiv", am4charts.XYChart)
 
-		x.paddingRight = 20
-
+		x.paddingRight = 50
 		let data = []
 		let visits = 10
 
 		for (let i = 1; i < 366; i++) {
 			visits += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10)
-			data.push({ date: new Date(2018, 0, i), name: "name" + i, value: visits })
+			data.push({ date: new Date(2020, 0, i), name: "name" + i, value: visits })
 		}
 
 		x.data = data
